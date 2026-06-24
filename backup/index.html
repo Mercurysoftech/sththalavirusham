@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sthala Vrikshum - Pure Bliss of Nature</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Sthala Vrikshum offers natural beauty products, aroma, natural health care products, and natural food products.">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <!-- Using a placeholder logo path, user can replace this with their actual logo -->
+                    <img src="logo.jpg" alt="Sthala Vrikshum Logo" id="brand-logo" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block';">
+                    <h1 id="logo-text" style="display:none;">Sthala Vrikshum</h1>
+                </a>
+            </div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav>
+                <ul id="primary-navigation" class="nav-list" data-visible="false">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+                    <li><a href="refund-policy.html" class="nav-link">Refund Policy</a></li>
+                    <li><a href="terms-conditions.html" class="nav-link">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section section">
+            <div class="container hero-content">
+                <h2 class="hero-title">Pure Bliss of <span class="highlight">Nature</span></h2>
+                <p class="hero-subtitle">Discover the healing power of authentic, organic ingredients for your body and soul.</p>
+                <a href="#products" class="btn btn-primary">Explore Our Products</a>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Our Philosophy</h3>
+                        <p>At <strong>Sthala Vrikshum</strong>, we believe in the pure bliss of nature. We are dedicated to bringing you the finest, ethically sourced natural products that promote holistic well-being.</p>
+                        <p>Our journey started with a simple vision: to bridge the gap between ancient natural remedies and modern lifestyles. Every product we offer is carefully crafted to ensure it retains its natural essence and efficacy.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">🌿</div>
+                            <h4>100% Natural</h4>
+                            <p>Free from harmful chemicals and synthetic additives.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">♻️</div>
+                            <h4>Eco-Friendly</h4>
+                            <p>Sustainable practices from sourcing to packaging.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products-section section bg-light">
+            <div class="container">
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-desc">Experience our range of premium, earth-friendly offerings.</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-icon">✨</div>
+                        <h3>Natural Beauty Products</h3>
+                        <p>Nourish your skin with our pure, plant-based skincare and cosmetics designed for lasting radiance.</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-icon">🌸</div>
+                        <h3>Aroma</h3>
+                        <p>Transform your space and mood with our soothing, natural essential oils and aromatic blends.</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-icon">❤️</div>
+                        <h3>Natural Health Care</h3>
+                        <p>Support your body's wellness with our trusted traditional remedies and health supplements.</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-icon">🍯</div>
+                        <h3>Natural Food Products</h3>
+                        <p>Wholesome, unadulterated food products to nourish you from the inside out.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>We'd love to hear from you. Please reach out with any questions or feedback.</p>
+                        <ul class="contact-details">
+                            <li><strong>Email:</strong> support@sthalavrikshum.com</li>
+                            <li><strong>Phone:</strong> +91 98765 43210</li>
+                            <li><strong>Address:</strong> 123 Nature Grove, Wellness Avenue, Chennai, India</li>
+                        </ul>
+                    </div>
+                    <div class="contact-form-container">
+                        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h2>Sthala Vrikshum</h2>
+                <p>Pure Bliss of Nature</p>
+            </div>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a> | 
+                <a href="refund-policy.html">Refund Policy</a> | 
+                <a href="terms-conditions.html">Terms & Conditions</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; <span id="year"></span> Sthala Vrikshum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
